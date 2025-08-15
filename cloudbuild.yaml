@@ -20,8 +20,6 @@ steps:
     - 'europe-west4-docker.pkg.dev/$PROJECT_ID/triodos-repo/triodos-ingestor:$COMMIT_SHA'
     - '--region'
     - 'europe-west4'
-  # Add this line to specify the service account for this step
-  serviceAccount: 'projects/teak-truck-466313-g1/serviceAccounts/firestore-writer@teak-truck-466313-g1.iam.gserviceaccount.com'
 
 # Store the image in Artifact Registry
 images:
@@ -29,3 +27,6 @@ images:
 
 options:
   logging: CLOUD_LOGGING_ONLY
+
+  # Add this line to specify the service account for this step
+  serviceAccount: 'projects/teak-truck-466313-g1/serviceAccounts/firestore-writer@teak-truck-466313-g1.iam.gserviceaccount.com'
