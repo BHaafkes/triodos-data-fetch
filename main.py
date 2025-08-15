@@ -5,7 +5,7 @@ import re
 from google.cloud import firestore
 
 # Initialize the Firestore client outside the handler for efficiency
-PROJECT_ID = "PortfolioManagementSystem"
+PROJECT_ID = "portfoliomanagementsyste-4c3eb"
 db = firestore.Client(project=PROJECT_ID)
 def get_fund_data_from_url(url):
     """
