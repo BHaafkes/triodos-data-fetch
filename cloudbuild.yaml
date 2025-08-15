@@ -1,3 +1,4 @@
+# Forcing refresh
 steps:
 # 1. Build the container image
 - name: 'gcr.io/cloud-builders/docker'
