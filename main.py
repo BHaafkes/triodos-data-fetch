@@ -5,8 +5,8 @@ import re
 from google.cloud import firestore
 
 # Initialize the Firestore client outside the handler for efficiency
-db = firestore.Client()
-
+PROJECT_ID = "PortfolioManagementSystem"
+db = firestore.Client(project=PROJECT_ID)
 def get_fund_data_from_url(url):
     """
     Fetches and reads fund data from a specific Triodos URL.
