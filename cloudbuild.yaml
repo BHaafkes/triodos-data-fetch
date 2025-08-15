@@ -14,7 +14,7 @@ steps:
     - 'run'
     - 'jobs'
     - 'update'
-    - 'triodos-data-job'
+    - 'triodos-data-ingestor'
     - '--image'
     - 'europe-west4-docker.pkg.dev/$PROJECT_ID/triodos-repo/triodos-ingestor:$COMMIT_SHA'
     - '--region'
